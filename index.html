@@ -14,9 +14,32 @@
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
         <script src="./assets/script/index.js" defer></script>
     </head>
-    <body>
-      <div class="container">
-
-      </div>
+    <body>       
+        <div class="container">
+            <p>Cookies are small text files that are stored on a user's device by a website.
+               They are often used to remember user preferences and track user behavior for analytics 
+               and advertising purposes.</p>
+        </div>
+        <dialog id="cookies-dialog">
+            <h2>Cookies Policy</h2>
+            <p>This website uses cookies to improve your experience. By clicking "Accept",
+                you consent to the use of all cookies. Alternatively, click "Settings" to control which cookies are used.</p>
+            <button id="accept-all">Accept</button>
+            <button id="settings">Settings</button>
+        </dialog>
+        <dialog id="cookie-settings-dialog">
+            <h2>Cookie Settings</h2>
+            <form>
+              <input type="checkbox" id="analytics-cookie" name="analytics-cookie" checked>
+              <label class="checkmark" for="analytics-cookie">Analytics cookie</label>
+              <br>
+              <input type="checkbox" id="marketing-cookie" name="marketing-cookie" checked>
+              <label class="checkmark" for="marketing-cookie">Marketing cookie</label>
+              <br>
+              <input type="checkbox" id="preferences-cookie" name="preferences-cookie" checked>
+              <label class="checkmark" for="preferences-cookie">Preferences cookie</label>
+            </form>
+            <button id="save-settings">Save Settings</button>
+          </dialog>
     </body>
 </html> 
